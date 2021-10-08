@@ -105,6 +105,7 @@ extension PythonLibrary {
                 //for libraryPathExtension in libraryPathExtensions {
                     //let libraryPath =
                         //librarySearchPath + libraryName + libraryPathExtension
+        print("filePath: \(filePath)")
         libraryPaths.append(filePath)
                 //}
             //}
