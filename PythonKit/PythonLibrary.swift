@@ -106,7 +106,7 @@ extension PythonLibrary {
                     //let libraryPath =
                         //librarySearchPath + libraryName + libraryPathExtension
         print("filePath: \(filePath)")
-        libraryPaths.append(filePath)
+        libraryPaths.append(filePath + "/Versions/:/Python")
                 //}
             //}
         //}
