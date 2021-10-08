@@ -82,7 +82,8 @@ extension PythonLibrary {
     #if canImport(Darwin)
     private static var libraryNames = ["Python.framework/Versions/:/Python"]
     private static var libraryPathExtensions = [""]
-    private static var librarySearchPaths = [Bundle.main.bundlePath]
+    //let filePath = Bundle.main.url(forResource: "Python", withExtension: "framework")!
+    private static var librarySearchPaths = [Bundle.main.url]
     private static var libraryVersionSeparator = "."
     #elseif os(Linux)
     private static var libraryNames = ["libpython:", "libpython:m"]
