@@ -99,7 +99,7 @@ extension PythonLibrary {
     
     private static let libraryPaths: [String] = {
         var libraryPaths: [String] = []
-        let filePath = Bundle.main.resourcePath
+        let filePath = Bundle.main.resourcePath!
         //for librarySearchPath in librarySearchPaths {
             //for libraryName in libraryNames {
                 //for libraryPathExtension in libraryPathExtensions {
