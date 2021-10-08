@@ -74,7 +74,7 @@ public struct PythonLibrary {
 
 // Methods of `PythonLibrary` required to load the Python library.
 extension PythonLibrary {
-    private static let supportedMajorVersions: [Int] = [3, 2]
+    private static let supportedMajorVersions: [Int] = [3]
     private static let supportedMinorVersions: [Int] = Array(0...30).reversed()
     
     private static let libraryPathVersionCharacter: Character = ":"
