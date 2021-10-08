@@ -13,6 +13,7 @@
 // This file implements the logic for dynamically loading Python at runtime.
 //
 //===----------------------------------------------------------------------===//
+import Cocoa
 
 #if canImport(Darwin)
 import Darwin
@@ -81,7 +82,7 @@ extension PythonLibrary {
     #if canImport(Darwin)
     private static var libraryNames = ["Python.framework/Versions/:/Python"]
     private static var libraryPathExtensions = [""]
-    private static var librarySearchPaths = ["", "/usr/local/Frameworks/"]
+    private static var librarySearchPaths = ["", Bundle.main.bundlePath]
     private static var libraryVersionSeparator = "."
     #elseif os(Linux)
     private static var libraryNames = ["libpython:", "libpython:m"]
