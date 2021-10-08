@@ -99,14 +99,14 @@ extension PythonLibrary {
     
     private static let libraryPaths: [String] = {
         var libraryPaths: [String] = []
-        let filePath = Bundle.main.url(forResource: "Python", withExtension: "framework")!.absoluteString
+        let filePath = Bundle.main.resourcePath
         //for librarySearchPath in librarySearchPaths {
             //for libraryName in libraryNames {
                 //for libraryPathExtension in libraryPathExtensions {
                     //let libraryPath =
                         //librarySearchPath + libraryName + libraryPathExtension
         print("filePath: \(filePath)")
-        libraryPaths.append(filePath + "/Versions/3.9/Python")
+        libraryPaths.append(filePath + "Python.framework/Versions/:/Python")
                 //}
             //}
         //}
