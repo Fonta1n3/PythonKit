@@ -83,7 +83,7 @@ extension PythonLibrary {
     private static var libraryNames = ["Python.framework/Versions/:/Python"]
     private static var libraryPathExtensions = [""]
     //let filePath = Bundle.main.url(forResource: "Python", withExtension: "framework")!
-    private static var librarySearchPaths = [Bundle.main.bundleURL]
+    private static var librarySearchPaths = [Bundle.main.bundleURL.absoluteString]
     private static var libraryVersionSeparator = "."
     #elseif os(Linux)
     private static var libraryNames = ["libpython:", "libpython:m"]
