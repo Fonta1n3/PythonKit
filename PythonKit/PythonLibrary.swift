@@ -99,13 +99,13 @@ extension PythonLibrary {
     
     private static let libraryPaths: [String] = {
         var libraryPaths: [String] = []
-        let filePath = Bundle.main.url(forResource: "Python", withExtension: "framework")!
+        let filePath = Bundle.main.url(forResource: "Python", withExtension: "framework")!.absoluteString
         //for librarySearchPath in librarySearchPaths {
             //for libraryName in libraryNames {
                 //for libraryPathExtension in libraryPathExtensions {
                     //let libraryPath =
                         //librarySearchPath + libraryName + libraryPathExtension
-                    libraryPaths.append(filePath)
+        libraryPaths.append(filePath)
                 //}
             //}
         //}
